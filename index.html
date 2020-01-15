@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<title>PlayBusiness Test</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="effects.js"></script>
+
+</head>
+<body>
+
+
+	<div class="cont">
+
+		<!-- Nav Bar -->
+		<header>
+
+			<!-- nav bar Logo-->
+			<div class="logo_menu">
+				<img class="" src="images/logo.PNG" alt="logo">
+				<span class="material-icons" id="search_menu">search</span>
+			</div>
+			
+
+			<!-- Nav bar options -->
+			<nav>
+				<a href="#">Descubre</a>
+				<a href="#">Consigue Inversión</a>
+				<a href="#">Dudas</a>
+			</nav>
+			<a class="opt" href=""></a>
+		</header>
+		
+
+		<!-- Side Bar -->
+		<div class="sidebar">
+			<div class="sid_conteiner">
+				<img src="images/logo2.PNG" alt="logo2">
+				<div>
+					<p>
+						<b>PlayBusiness</b>
+						<br>
+						Persona moral
+						<br>
+						contacto@playbusiness.mx
+						<br><br>
+						<b>SPV</b>
+						<br>
+						Avenida SPV SAPI
+						<br>
+						Total vendido 20%
+						<br><br>
+						<hr>
+
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="main">
+
+			<!-- Main Container-->
+			<a href="#" id="links"><i id="links" class="material-icons">keyboard_backspace</i> Regresar a menú</a>
+			<br><br>
+			<label ><b>Estructura accionaria del solicitante </b> <a href="#" id="links">Ver historial</a></label>
+			<br><br>
+			<button class="btn btn-primary" id="btn_01">Notificar Causal de Conversión</button>
+			<button class="btn btn-light" id="btn_02">Estructura del SPV</button>
+			<br><br>
+
+			<label><b>PASO 1 Agregar a los accionistas</b></label>
+			<br>
+
+
+			<!-- Principal Table-->
+			<div class="cap_table">
+
+				<table class=" ">
+					<tr>
+						<td class="cell1">Nombre Completo</td>
+						
+						<!-- First Option of Cap table -->
+						<td rowspan="5" class="mybuttons">
+							<a href="#" id="btn_1" onclick="slideRight('btn_11','table_class1');">CLASE I</a>
+						</td>
+
+						<!-- First Option of Cap table to shifted to right (sub table)-->
+						<td rowspan="5" id="btn_11" style="display: none;">
+							<table class="table subTable" id="classI">
+								<thead>
+									<tr><th>CLASE I</th></tr>
+								</thead>
+								<tbody id="table_class1">
+								
+								</tbody>
+							</table>
+						</td>
+
+						<!-- second Option of Cap table -->
+						<td class="mybuttons" rowspan="5">
+							<a href="#" id="btn_2" onclick="slideRight('btn_22','table_class2');">CLASE II</a>
+						</td>
+
+						<!-- second Option of Cap table to shifted to right (sub table)-->
+						<td rowspan="5" id="btn_22" style="display: none;">
+							<table class="table subTable" id="classII">
+								<thead>
+									<tr><th>CLASE II</th></tr>
+								</thead>
+								<tbody id="table_class2">
+								
+								</tbody>
+							</table>
+						</td>
+
+						<!-- third Option of Cap table -->
+						<td class="mybuttons" rowspan="5" id="btn_3" onclick="slideRight('btn_33','table_class3');">
+							<a href="#">CLASE III</a>
+
+						</td>
+
+						<!-- third Option of Cap table to shifted to right  (sub table)-->
+						<td rowspan="5" id="btn_33" style="display: none;">
+							<table class="table subTable" id="classIII">
+								<thead>
+									<tr><th>CLASE III</th></tr>
+								</thead>
+								<tbody id="table_class3">
+								
+								</tbody>
+							</table>
+						</td>
+						<td>% de la empresa</td>
+					</tr>
+
+
+					<!-- Remaining data of Table -->
+					<tr>
+						<td class="cell1">Serie</td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td class="cell1">J R</td>
+						<td>50%</td>
+					</tr>
+
+					<tr>
+						<td class="cell1">J P</td>
+						<td>20%</td>
+					</tr>
+
+					<tr>
+						<td class="cell1">O G</td>
+						<td>30%</td>
+					</tr>
+				</table>
+
+			</div>
+			
+			<!-- Design links -->
+
+			<div>
+				<a href="#" id="links"><i class="material-icons" id="links">add_circle_outline</i> Agregar accionista</a>
+			</div>
+
+			<div>
+				<a href="#" id="links"><i class="material-icons" id="links">add_circle_outline</i> Agregar SPV</a>
+				<br><br><br>
+			</div>
+
+
+			<div>
+				<p><b>Paso 2 Sube tu documento</b></p><br>
+			</div>
+
+			<div>
+				 <p><i class="material-icons" id="links">fiber_manual_record</i><b>Documento aprobado</b></p>
+				<p>Certificado del secretario del consejo de admiistración</p>
+			</div>
+
+			<div>
+				<button class="btn btn-light" style="width: 40%;" style="border: 1px solid gray; font-size:25px;">
+					<i class="material-icons">add_circle_outline</i> <br>
+					Arrastra o sube tu documento
+				</button>
+			</div>
+			<br>
+			<div>
+				<button class="btn btn-primary" style="width: 30%;" id="btn_01">Enviar Solicitud</button>
+
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>

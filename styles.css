@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+
+/* Value reset */
+*{
+	
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+/* main container configuration */
+.cont {
+	width:80%;
+	margin:auto;
+ 
+	/* Flexbox */
+	display:flex;
+	flex-flow:row wrap;
+}
+
+
+/* Tag Changes with main text*/
+li, a{
+	font-family: "Montserrat", "times new roman";
+	font-weight: 500;
+	font-size: 12px;
+	color: black;
+	text-decoration: none;
+}
+
+
+/* Style of Header or NAVBAR */
+
+header{
+	
+	background:#fff;
+	width:100%;
+	padding:20px;
+ 
+	/* Flexbox */
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+
+ 
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+
+/* Style of Logo  of NAVBAR */
+header .logo_menu{
+	margin-right: auto;
+	font-size: 30px;
+}
+
+
+header .logo_menu span{
+	padding-left: 10px;
+	padding-right: 20px;
+}
+
+
+/* Style of Links or NAVBAR */
+header nav{
+	width: 50%;
+	/* Flexbox */
+	display:flex;
+	flex-wrap:wrap;
+	margin-left: auto;
+}
+
+header nav a{
+	color:#aaa;
+	text-decoration: none;
+ 
+	/* Flexbox */
+	flex-grow:1;
+}
+
+
+/* Links color */
+#links{
+	color: #7c4;
+}
+
+
+/* Background color of class buttons (CLASE X) */
+.mybuttons{
+	background: #efefef;
+}
+
+/* Background color of sub table (CLASE X) */
+.subTable{
+	background: #e8e8e8;
+}
+
+/*Style of SIDE BAR*/
+.sidebar{
+	background:#f6f6f6;
+	padding:10px;
+	/*FLEX*/
+	flex:1 1 30%;
+	/*flex:0 0 300px;*/
+ 
+	display: flex;
+	flex-wrap:wrap;
+	flex-direction:column;
+	justify-content:flex-start;
+}
+
+/* right content sstyle */
+
+.main {
+	background:#fff;
+	padding: 10px;
+ 
+	flex:1 1 70%;
+	font-size: 12px;
+	/*flex:1;*/
+}
+
+/*Button  "Notify casual conversion"*/
+#btn_01{
+	background: #244;
+	border: none;
+	font-size: 12px;
+
+}
+
+
+/* Button "SPV Structure"*/
+#btn_02{
+	border: 1px solid gray;
+	font-size: 12px;
+
+}
+
+
+/* Style of Principal Table*/ 
+table , #table_class1{
+	background-color: white;
+	
+	width: 50%;
+}
+
+
+
+.cap_table tr td a{
+	text-decoration: none;
+	color: black;
+	width: 30px;
+	height: 29%;
+	display: block;
+	left: 5px;
+	writing-mode: vertical-lr;
+    transform: rotate(180deg);
+	padding-top: 130px;
+	padding-left: 10px;
+}
+
+.cell1{
+	width: 50%;
+	
+}
+
+
+@media screen and (max-width: 800px) {
+	.cont {
+		flex-direction:column;
+	}
+ 
+	header {
+		flex-direction:column;
+		padding:0;
+	}
+ 
+	header .logo_menu {
+		margin:20px 0;
+	}
+ 
+	header nav {
+		width: 100%;
+	}
+ 
+	.sidebar{
+		flex-direction:row;
+		flex:0;
+	}
+ 
+	
+}
+ 
+@media screen and (max-width: 600px) {
+	.sidebar {
+		flex-direction:column;
+	}
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
